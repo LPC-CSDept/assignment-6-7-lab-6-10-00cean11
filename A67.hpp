@@ -55,27 +55,6 @@ void swap(int &val1, int &val2, int &val3, int &val4){
   val4 = N;
   cout << "Swapped numbers are " << val1 << ", " << val2 << ", " << val3 << ", " << val4 <<endl;
 }
-int main (){
-  int num;
-  int val1, val2, val3, val4;
-  getInput(num);
-  switch(num){
-    case 2:
-      getInput(val1,val2);
-      swap(val1,val2);
-      break;
-    case 3:
-      getInput(val1,val2,val3);
-      swap(val1,val2,val3);
-      break;
-    case 4:
-      getInput(val1,val2,val3,val4);
-      swap(val1,val2,val3,val4);
-      break;
-    default:
-      break;
-    }
-}
 
 // complete the Overloading function swap( )
 // swap ( ) function has the difference number of parameters from 2 to 4

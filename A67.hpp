@@ -46,19 +46,10 @@ void swap(int &num1, int &num2, int &num3)
     remainder = num3;
   }
   num1 = min;
-  cout << "**************************************************" << endl;
-  cout << "Test value num1 " << num1 << endl;
-  cout << "**************************************************" << endl;
+  cout << "Testing value 1 " << num1 << endl;
   num2 = remainder;
   num3 = max;
 
-  /* make simple algorithm
-      if ( n1 is min)
-          if ( n3 > n2)
-            n1, n2, n3 = min, n2, n3
-      and so on.
-    */
-}
 
 void swap(int &num1, int &num2, int &num3, int &num4)
 {

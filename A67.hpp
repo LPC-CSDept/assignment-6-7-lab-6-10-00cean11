@@ -2,10 +2,10 @@
 #include <iomanip>
 #include <iostream>
 using namespace std;
-void getInput(int &val1, int &val2){
-  cout << "Input 2 values\n";
-  cin >> val1 >> val2;
-}
+// void getInput(int &val1, int &val2){
+//   cout << "Input 2 values\n";
+//   cin >> val1 >> val2;
+// }
 void swap(int &val1, int &val2){
   int N;
   N = val1;
@@ -13,9 +13,9 @@ void swap(int &val1, int &val2){
   val2 = N;
   cout << val1 << ", " << val2 <<endl;
 }
-void getInput(int &val1, int &val2, int &val3){
-  cin >> val1 >> val2 >> val3;
-}
+// void getInput(int &val1, int &val2, int &val3){
+//   cin >> val1 >> val2 >> val3;
+// }
 void swap (int &val1, int &val2, int &val3){
   if (val1 < val2 && val1 < val3){
   if (val2 < val3){
@@ -37,9 +37,9 @@ void swap (int &val1, int &val2, int &val3){
   }
 }
   }
-void getInput(int &val1, int &val2, int &val3, int &val4){
-  cin >> val1 >> val2 >> val3 >> val4;
-  }
+// void getInput(int &val1, int &val2, int &val3, int &val4){
+//   cin >> val1 >> val2 >> val3 >> val4;
+//   }
 void swap(int &val1, int &val2, int &val3, int &val4){
   int N;
   N = val1;

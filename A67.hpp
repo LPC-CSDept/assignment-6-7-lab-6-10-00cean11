@@ -1,21 +1,14 @@
-//
 #include <iomanip>
 #include <iostream>
 using namespace std;
-// void getInput(int &val1, int &val2){
-//   cout << "Input 2 values\n";
-//   cin >> val1 >> val2;
-// }
-void swap(int &val1, int &val2){
-  int N;
-  N = val1;
-  val1 = val2;
-  val2 = N;
-  cout << val1 << ", " << val2 <<endl;
+
+void swap(int &num1, int &num2)
+{
+  int temp = num1;
+  num1 = num2;
+  num2 = temp;
 }
-// void getInput(int &val1, int &val2, int &val3){
-//   cin >> val1 >> val2 >> val3;
-// }
+
 void swap(int &num1, int &num2, int &num3)
 {
   int max, remainder;
@@ -58,20 +51,18 @@ void swap(int &num1, int &num2, int &num3)
   cout << "**************************************************" << endl;
   num2 = remainder;
   num3 = max;
-}
-// void getInput(int &val1, int &val2, int &val3, int &val4){
-//   cin >> val1 >> val2 >> val3 >> val4;
-//   }
-void swap(int &val1, int &val2, int &val3, int &val4){
-  int N;
-  N = val1;
-  val1 = val2;
-  val2 = val3;
-  val3 = val4;
-  val4 = N;
-  cout << val1 << ", " << val2 << ", " << val3 << ", " << val4 <<endl;
+
+  /* make simple algorithm
+      if ( n1 is min)
+          if ( n3 > n2)
+            n1, n2, n3 = min, n2, n3
+      and so on.
+    */
 }
 
-// complete the Overloading function swap( )
-// swap ( ) function has the difference number of parameters from 2 to 4
-// For example, swap(10, 20); swap(10, 20, 30); swap(10, 20, 30, 40)
+void swap(int &num1, int &num2, int &num3, int &num4)
+{
+  swap(num1, num2);
+  swap(num2, num4);
+  swap(num2, num3);
+}

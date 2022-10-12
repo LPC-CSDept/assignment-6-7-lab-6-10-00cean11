@@ -16,27 +16,49 @@ void swap(int &val1, int &val2){
 // void getInput(int &val1, int &val2, int &val3){
 //   cin >> val1 >> val2 >> val3;
 // }
-void swap (int &val1, int &val2, int &val3){
-  if (val1 < val2 && val1 < val3){
-  if (val2 < val3){
-    cout << val1 << ", " << val2 << ", " << val3 << endl;
-  } else {
-    cout << val1 << ", " << val3 << ", " << val2 << endl;
+void swap(int &num1, int &num2, int &num3)
+{
+  int max, remainder;
+
+  if (num1 > num2 && num1 > num3)
+  {
+    max = num1;
   }
-} else if (val2 < val1 && val2 < val3){
-  if (val1 < val3){
-    cout << val2 << ", " << val1 << ", " << val3 << endl;
-  } else {
-    cout << val2 << ", " << val3 << ", " << val1 << endl;
+  else if (num2 > num3)
+  {
+    max = num2;
   }
-} else if (val3 < val1 && val3 < val2){
-  if (val1 < val2){
-    cout << val3 << ", " << val1 << ", " << val2 << endl;
-  } else {
-    cout << val3 << ", " << val2 << ", " << val1 << endl;
+  else
+  {
+    max = num3;
   }
+
+  int smallest = num1;
+  int min;
+  if (num2 < min)
+    min = num2;
+  if (num3 < min)
+    min = num3;
+
+  if (num1 != min && num1 != max)
+  {
+    remainder = num1;
+  }
+  if (num2 != min && num2 != max)
+  {
+    remainder = num2;
+  }
+  if (num3 != min && num3 != max)
+  {
+    remainder = num3;
+  }
+  num1 = min;
+  cout << "**************************************************" << endl;
+  cout << "Test value num1 " << num1 << endl;
+  cout << "**************************************************" << endl;
+  num2 = remainder;
+  num3 = max;
 }
-  }
 // void getInput(int &val1, int &val2, int &val3, int &val4){
 //   cin >> val1 >> val2 >> val3 >> val4;
 //   }
